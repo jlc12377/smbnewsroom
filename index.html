@@ -81,6 +81,13 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .article-card-img.gold{background:linear-gradient(135deg,#2e2a1a,#4f3f1f)}
 .article-card-img.dark{background:linear-gradient(135deg,#111,#2d2d2d)}
 .article-card-img.warm{background:linear-gradient(135deg,#2e1a1a,#4f2d1f)}
+
+.article-card-img{display:flex;flex-direction:column;justify-content:flex-end;padding:20px}
+.article-card-img .card-icon{font-size:32px;opacity:.25;color:#fff;margin-bottom:auto;padding-top:4px}
+.article-card-img .card-headline{font-family:var(--font-display);font-size:26px;font-weight:700;color:rgba(255,255,255,.9);line-height:1.1;letter-spacing:-.5px}
+.article-card-img .card-number{font-family:var(--font-display);font-size:64px;font-weight:700;color:rgba(255,255,255,.08);position:absolute;top:12px;right:20px;line-height:1}
+.article-card-img .card-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:4px}
+
 .article-card-type{position:absolute;top:12px;left:12px;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:3px;color:#fff}
 .article-card-type.listicle{background:var(--accent)}
 .article-card-type.spotlight{background:var(--blue)}
@@ -261,19 +268,19 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
   <div class="article-grid">
     <a href="/pages/top-10-crm.html" class="article-card">
-      <div class="article-card-img red"><span class="article-card-type listicle">Listicle</span></div>
+      <div class="article-card-img red" style="position:relative"><span class="article-card-type listicle">Listicle</span><span class="card-number">10</span><div class="card-tag">CRM &middot; Enterprise</div><div class="card-headline">The Platforms Reshaping Sales</div></div>
       <div class="article-card-title">Top 10 CRM Platforms Disrupting Enterprise Sales in 2026</div>
       <div class="article-card-excerpt">From AI-powered pipeline management to autonomous deal scoring, these CRM platforms are changing how enterprise sales teams operate.</div>
       <div class="article-card-meta">Mar 30, 2026 &middot; 8 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img blue"><span class="article-card-type listicle">Listicle</span></div>
+      <div class="article-card-img blue" style="position:relative"><span class="article-card-type listicle">Listicle</span><span class="card-number">10</span><div class="card-tag">Project Management</div><div class="card-headline">AI Meets Team Workflows</div></div>
       <div class="article-card-title">10 Project Management Tools Every Growing Team Should Evaluate</div>
       <div class="article-card-excerpt">AI agents are entering project management. Here are the platforms leading the charge — and the ones falling behind.</div>
       <div class="article-card-meta">Mar 29, 2026 &middot; 7 min read</div>
     </a>
     <a href="/pages/top-10-cybersecurity.html" class="article-card">
-      <div class="article-card-img dark"><span class="article-card-type listicle">Listicle</span></div>
+      <div class="article-card-img dark" style="position:relative"><span class="article-card-type listicle">Listicle</span><span class="card-number">10</span><div class="card-tag">Cybersecurity</div><div class="card-headline">Defending the Enterprise</div></div>
       <div class="article-card-title">10 Cybersecurity Platforms Protecting Enterprise in 2026</div>
       <div class="article-card-excerpt">The cybersecurity market is consolidating fast. These platforms are winning the platform war — and why it matters for your security stack.</div>
       <div class="article-card-meta">Mar 28, 2026 &middot; 9 min read</div>
@@ -320,19 +327,19 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
   <div class="article-grid">
     <a href="/pages/top-crm-expert-roundup.html" class="article-card">
-      <div class="article-card-img gold"><span class="article-card-type roundup">Expert Roundup</span></div>
+      <div class="article-card-img gold" style="position:relative"><span class="article-card-type roundup">Expert Roundup</span><span class="card-number">12</span><div class="card-tag">Cross-Publication Analysis</div><div class="card-headline">The Expert Consensus</div></div>
       <div class="article-card-title">What Forbes, G2 & Gartner All Agree On for CRM Software</div>
       <div class="article-card-excerpt">We analyzed 12 major publication rankings to build a consensus map of which CRM platforms the experts agree on.</div>
       <div class="article-card-meta">Mar 30, 2026 &middot; 9 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img gold"><span class="article-card-type roundup">Expert Roundup</span></div>
+      <div class="article-card-img gold" style="position:relative"><span class="article-card-type roundup">Expert Roundup</span><div class="card-tag">Coming April 2026</div><div class="card-headline">PM Tools Compared</div></div>
       <div class="article-card-title">Best Project Management Software — Every Major Publication's Top Picks Compared</div>
       <div class="article-card-excerpt">PCMag, TechRadar, Zapier, and 8 more publications each named their top PM tools. Here's the consensus.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 8 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img gold"><span class="article-card-type roundup">Expert Roundup</span></div>
+      <div class="article-card-img gold" style="position:relative"><span class="article-card-type roundup">Expert Roundup</span><div class="card-tag">Coming April 2026</div><div class="card-headline">AI Citations Decoded</div></div>
       <div class="article-card-title">Which Software Gets Cited by AI? An Analysis of LLM Recommendations</div>
       <div class="article-card-excerpt">We asked ChatGPT, Claude, and Perplexity 50 identical software questions. Here's which products appeared most.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 11 min read</div>
@@ -350,19 +357,19 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
   <div class="article-grid">
     <a href="#" class="article-card">
-      <div class="article-card-img green"><span class="article-card-type spotlight">Spotlight</span></div>
+      <div class="article-card-img green" style="position:relative"><span class="article-card-type spotlight">Spotlight</span><div class="card-tag">HR Technology</div><div class="card-headline">Rippling</div></div>
       <div class="article-card-title">How Rippling Is Redefining HR Tech for Growing Companies</div>
       <div class="article-card-excerpt">The fastest-growing HR platform just crossed $1B in ARR. Here's what they're doing differently — and what their competitors are missing.</div>
       <div class="article-card-meta">Mar 29, 2026 &middot; 6 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img green"><span class="article-card-type spotlight">Spotlight</span></div>
+      <div class="article-card-img green" style="position:relative"><span class="article-card-type spotlight">Spotlight</span><div class="card-tag">Project Management</div><div class="card-headline">ClickUp</div></div>
       <div class="article-card-title">ClickUp's All-in-One Bet: Can One Platform Really Replace Them All?</div>
       <div class="article-card-excerpt">At $7/user/month, ClickUp promises to replace your PM tool, docs, chat, and more. We talked to 5 companies that tried it.</div>
       <div class="article-card-meta">Mar 26, 2026 &middot; 7 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img green"><span class="article-card-type spotlight">Spotlight</span></div>
+      <div class="article-card-img green" style="position:relative"><span class="article-card-type spotlight">Spotlight</span><div class="card-tag">Email Marketing</div><div class="card-headline">Brevo</div></div>
       <div class="article-card-title">Brevo's Quiet Rise: From Sendinblue to Serious Mailchimp Challenger</div>
       <div class="article-card-excerpt">The French email marketing platform rebranded, rebuilt, and is now growing faster than any competitor under $50M ARR.</div>
       <div class="article-card-meta">Mar 23, 2026 &middot; 5 min read</div>
@@ -392,19 +399,19 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
   <div class="article-grid">
     <a href="/pages/ai-consolidation.html" class="article-card">
-      <div class="article-card-img warm"><span class="article-card-type insight">Insight</span></div>
+      <div class="article-card-img warm" style="position:relative"><span class="article-card-type insight">Insight</span><div class="card-tag">Trend Analysis</div><div class="card-headline">The AI Wave</div></div>
       <div class="article-card-title">The AI Consolidation Wave: What It Means for Software Buyers in 2026</div>
       <div class="article-card-excerpt">Major platforms are acquiring AI startups at unprecedented rates. How this consolidation affects pricing, features, and your vendor strategy.</div>
       <div class="article-card-meta">Mar 28, 2026 &middot; 10 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img warm"><span class="article-card-type insight">Insight</span></div>
+      <div class="article-card-img warm" style="position:relative"><span class="article-card-type insight">Insight</span><div class="card-tag">Coming April 2026</div><div class="card-headline">SaaS Pricing Data</div></div>
       <div class="article-card-title">2026 SaaS Pricing Report: How 200 Software Companies Price Their Products</div>
       <div class="article-card-excerpt">Average per-seat costs, the rise of usage-based pricing, and which categories saw the biggest increases year-over-year.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 14 min read</div>
     </a>
     <a href="#" class="article-card">
-      <div class="article-card-img warm"><span class="article-card-type insight">Insight</span></div>
+      <div class="article-card-img warm" style="position:relative"><span class="article-card-type insight">Insight</span><div class="card-tag">AI Visibility</div><div class="card-headline">Get Found by AI</div></div>
       <div class="article-card-title">Why Your Software Company Needs to Show Up in AI Search Results — Now</div>
       <div class="article-card-excerpt">LLMs are becoming the default recommendation engine. Companies not optimizing for AI citations are already losing market share.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 8 min read</div>
