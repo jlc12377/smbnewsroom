@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smbnewsroom.com/sitemap.xml
