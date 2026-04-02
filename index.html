@@ -141,6 +141,9 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .footer-bottom a{color:rgba(255,255,255,.25);text-decoration:none;margin-left:16px}
 
 /* Responsive */
+.intro-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.intro-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.intro-ctas{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr}
   .hero h1{font-size:32px}
@@ -152,6 +155,8 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   .nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--black);flex-direction:column;padding:16px 24px;gap:12px}
   .nav-links.open{display:flex}
   .mobile-menu-btn{display:flex}
+  .intro-card{grid-template-columns:1fr;gap:24px}
+  .mission-bar{flex-direction:column;gap:4px;text-align:center}
 }
 @media(max-width:480px){
   .hero h1{font-size:26px}
@@ -184,7 +189,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 
 <!-- MISSION BAR -->
 <div style="padding:calc(var(--nav-h) + 16px) 24px 16px;background:var(--black);border-bottom:1px solid rgba(255,255,255,.1)">
-  <div style="max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between">
+  <div style="max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between" class="mission-bar">
     <div style="font-size:12px;color:rgba(255,255,255,.4)">Trusted business intelligence for growing companies &middot; Part of the <a href="https://listicleliaison.com" style="color:rgba(255,255,255,.6);text-decoration:underline">Listicle Liaison</a> publishing network</div>
     <div style="font-size:11px;color:rgba(255,255,255,.3)">March 31, 2026</div>
   </div>
@@ -193,16 +198,16 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 <!-- HERO -->
 <section class="hero" style="padding-top:24px">
   <div style="max-width:var(--max-w);margin:0 auto 32px;padding:0 24px">
-    <div style="background:var(--surface);border-radius:var(--radius-lg);padding:32px 36px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+    <div style="background:var(--surface);border-radius:var(--radius-lg);padding:32px 36px" class="intro-card">
       <div>
         <h2 style="font-family:var(--font-display);font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">Business intelligence you can act on.</h2>
         <p style="font-size:15px;color:var(--ink-3);line-height:1.65;margin-bottom:16px">SMB Newsroom delivers expert rankings, industry analysis, and company spotlights for decision-makers at growing businesses. We cut through vendor marketing to tell you what's actually working — backed by data from 380,000+ verified software reviews.</p>
-        <div style="display:flex;gap:12px">
+        <div class="intro-ctas">
           <a href="/pages/advertise.html" style="display:inline-block;padding:9px 20px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">Get Your Company Featured</a>
           <a href="https://softwareindustryreviews.com" style="display:inline-block;padding:9px 20px;border:1.5px solid var(--border);color:var(--ink-2);border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">View Software Rankings</a>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="intro-stats">
         <div style="background:var(--accent-pale);border-radius:var(--radius);padding:16px;text-align:center">
           <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--accent)">80+</div>
           <div style="font-size:12px;color:var(--ink-3);font-weight:500">Products Ranked</div>
@@ -241,7 +246,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
         <div class="hero-sidebar-item-title">10 Cybersecurity Platforms Protecting Enterprise in 2026</div>
         <div class="hero-sidebar-item-meta">Mar 31, 2026</div>
       </a>
-      <a href="/pages/rippling-spotlight.html" class="hero-sidebar-item">
+      <a href="#spotlights" class="hero-sidebar-item">
         <div class="hero-sidebar-item-label spotlight">Company Spotlight</div>
         <div class="hero-sidebar-item-title">How Rippling Is Redefining HR Tech for Growing Companies</div>
         <div class="hero-sidebar-item-meta">Mar 29, 2026</div>
