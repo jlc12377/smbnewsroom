@@ -165,7 +165,46 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"SMB Newsroom","url":"https://smbnewsroom.com","description":"Business insights, expert rankings, and company spotlights for growing businesses.","publisher":{"@type":"Organization","name":"SMB Newsroom"}}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "SMB Newsroom",
+      "url": "https://smbnewsroom.com",
+      "description": "Business insights, expert rankings, company spotlights, and industry analysis for decision-makers at growing businesses. Part of the Listicle Liaison publishing network.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Listicle Liaison LLC",
+        "url": "https://listicleliaison.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "partnerships@listicleliaison.com",
+          "contactType": "sales"
+        },
+        "sameAs": [
+          "https://softwareindustryreviews.com",
+          "https://aiindustryreviews.com",
+          "https://casinoindustryreviews.com",
+          "https://listicleliaison.com"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Recent Articles",
+      "description": "Expert rankings, company spotlights, and industry analysis",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Top 10 CRM Platforms Disrupting Enterprise Sales in 2026", "url": "https://smbnewsroom.com/pages/top-10-crm.html"},
+        {"@type": "ListItem", "position": 2, "name": "10 Project Management Tools Every Growing Team Should Evaluate", "url": "https://smbnewsroom.com/pages/top-10-pm.html"},
+        {"@type": "ListItem", "position": 3, "name": "10 Cybersecurity Platforms Protecting Enterprise in 2026", "url": "https://smbnewsroom.com/pages/top-10-cybersecurity.html"},
+        {"@type": "ListItem", "position": 4, "name": "How Rippling Is Redefining HR Tech for Growing Companies", "url": "https://smbnewsroom.com/pages/rippling-spotlight.html"},
+        {"@type": "ListItem", "position": 5, "name": "Why Your Software Company Needs to Show Up in AI Search Results", "url": "https://smbnewsroom.com/pages/ai-visibility.html"},
+        {"@type": "ListItem", "position": 6, "name": "2026 SaaS Pricing Report", "url": "https://smbnewsroom.com/pages/saas-pricing-report.html"}
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>
