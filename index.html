@@ -29,8 +29,6 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-webkit-font-smoothing:antialiased;line-height:1.6}
-
-/* Nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--black);height:var(--nav-h)}
 .nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -43,8 +41,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .nav-cta:hover{background:var(--accent-hover)!important}
 .mobile-menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:4px}
 .mobile-menu-btn span{display:block;width:20px;height:2px;background:#fff;border-radius:1px}
-
-/* Hero / Feature Story */
 .hero{padding:calc(var(--nav-h) + 32px) 24px 48px;background:var(--surface-warm);border-bottom:1px solid var(--border)}
 .hero-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
 .hero-label{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:12px;padding:3px 10px;background:var(--accent-pale);border-radius:3px}
@@ -62,15 +58,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .hero-sidebar-item-label.insight{color:var(--green)}
 .hero-sidebar-item-title{font-family:var(--font-display);font-size:17px;font-weight:600;line-height:1.3;letter-spacing:-.2px}
 .hero-sidebar-item-meta{font-size:12px;color:var(--ink-4);margin-top:4px}
-
-/* Section */
 .section{max-width:var(--max-w);margin:0 auto;padding:56px 24px}
 .section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;padding-bottom:12px;border-bottom:2px solid var(--black)}
 .section-title{font-family:var(--font-display);font-size:22px;font-weight:700;letter-spacing:-.3px}
 .section-more{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none}
 .section-more:hover{text-decoration:underline}
-
-/* Article Cards */
 .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .article-card{text-decoration:none;color:var(--ink);transition:all .2s}
 .article-card:hover{transform:translateY(-2px)}
@@ -81,13 +73,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .article-card-img.gold{background:linear-gradient(135deg,#2e2a1a,#4f3f1f)}
 .article-card-img.dark{background:linear-gradient(135deg,#111,#2d2d2d)}
 .article-card-img.warm{background:linear-gradient(135deg,#2e1a1a,#4f2d1f)}
-
 .article-card-img{display:flex;flex-direction:column;justify-content:flex-end;padding:20px}
 .article-card-img .card-icon{font-size:32px;opacity:.25;color:#fff;margin-bottom:auto;padding-top:4px}
 .article-card-img .card-headline{font-family:var(--font-display);font-size:26px;font-weight:700;color:rgba(255,255,255,.9);line-height:1.1;letter-spacing:-.5px}
 .article-card-img .card-number{font-family:var(--font-display);font-size:64px;font-weight:700;color:rgba(255,255,255,.08);position:absolute;top:12px;right:20px;line-height:1}
 .article-card-img .card-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:4px}
-
 .article-card-type{position:absolute;top:12px;left:12px;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:3px;color:#fff}
 .article-card-type.listicle{background:var(--accent)}
 .article-card-type.spotlight{background:var(--blue)}
@@ -96,11 +86,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .article-card-title{font-family:var(--font-display);font-size:19px;font-weight:600;line-height:1.3;letter-spacing:-.2px;margin-bottom:8px}
 .article-card-excerpt{font-size:14px;color:var(--ink-3);line-height:1.55;margin-bottom:10px}
 .article-card-meta{font-size:12px;color:var(--ink-4)}
-
-/* Divider */
 .divider{border:none;border-top:1px solid var(--border);margin:0}
-
-/* Sponsored strip */
 .sponsored-strip{background:var(--surface-3);padding:40px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .sponsored-strip-inner{max-width:var(--max-w);margin:0 auto}
 .sponsored-strip-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-4);margin-bottom:16px}
@@ -110,15 +96,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .sponsored-card-name{font-family:var(--font-display);font-size:16px;font-weight:600;margin-bottom:4px}
 .sponsored-card-desc{font-size:12.5px;color:var(--ink-3);line-height:1.45}
 .sponsored-card-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gold);margin-top:8px}
-
-/* CTA */
 .cta{background:var(--black);text-align:center;padding:72px 24px;position:relative}
 .cta h2{font-family:var(--font-display);font-size:34px;font-weight:700;color:#fff;letter-spacing:-.5px;margin-bottom:12px}
 .cta p{font-size:16px;color:rgba(255,255,255,.5);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
 .cta-btn{display:inline-block;padding:12px 28px;background:var(--accent);color:#fff;font-size:14px;font-weight:600;border-radius:4px;text-decoration:none;transition:background .2s}
 .cta-btn:hover{background:var(--accent-hover)}
-
-/* Dual CTA */
 .dual-cta{display:grid;grid-template-columns:1fr 1fr;max-width:var(--max-w);margin:0 auto;border-bottom:1px solid var(--border)}
 .dual-cta-card{padding:48px 40px;text-align:center}
 .dual-cta-card:first-child{border-right:1px solid var(--border)}
@@ -127,8 +109,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .dual-cta-btn{display:inline-block;padding:10px 24px;border-radius:4px;font-size:13px;font-weight:600;text-decoration:none;transition:all .2s}
 .dual-cta-btn.primary{background:var(--accent);color:#fff}.dual-cta-btn.primary:hover{background:var(--accent-hover)}
 .dual-cta-btn.outline{border:2px solid var(--black);color:var(--black)}.dual-cta-btn.outline:hover{background:var(--black);color:#fff}
-
-/* Footer */
 .footer{background:var(--black);padding:56px 24px 36px}
 .footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
 .footer-brand{font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff;margin-bottom:12px}
@@ -139,8 +119,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .footer-col a:hover{color:var(--accent)}
 .footer-bottom{max-width:var(--max-w);margin:32px auto 0;padding:16px 0 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.2)}
 .footer-bottom a{color:rgba(255,255,255,.25);text-decoration:none;margin-left:16px}
-
-/* Responsive */
 .intro-card{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .intro-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .intro-ctas{display:flex;gap:12px;flex-wrap:wrap}
@@ -168,48 +146,13 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "WebSite",
-      "name": "SMB Newsroom",
-      "url": "https://smbnewsroom.com",
-      "description": "Business insights, expert rankings, company spotlights, and industry analysis for decision-makers at growing businesses. Part of the Listicle Liaison publishing network.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Listicle Liaison LLC",
-        "url": "https://listicleliaison.com",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "partnerships@listicleliaison.com",
-          "contactType": "sales"
-        },
-        "sameAs": [
-          "https://softwareindustryreviews.com",
-          "https://aiindustryreviews.com",
-          "https://casinoindustryreviews.com",
-          "https://listicleliaison.com"
-        ]
-      }
-    },
-    {
-      "@type": "ItemList",
-      "name": "Recent Articles",
-      "description": "Expert rankings, company spotlights, and industry analysis",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Top 10 CRM Platforms Disrupting Enterprise Sales in 2026", "url": "https://smbnewsroom.com/pages/top-10-crm.html"},
-        {"@type": "ListItem", "position": 2, "name": "10 Project Management Tools Every Growing Team Should Evaluate", "url": "https://smbnewsroom.com/pages/top-10-pm.html"},
-        {"@type": "ListItem", "position": 3, "name": "10 Cybersecurity Platforms Protecting Enterprise in 2026", "url": "https://smbnewsroom.com/pages/top-10-cybersecurity.html"},
-        {"@type": "ListItem", "position": 4, "name": "How Rippling Is Redefining HR Tech for Growing Companies", "url": "https://smbnewsroom.com/pages/rippling-spotlight.html"},
-        {"@type": "ListItem", "position": 5, "name": "Why Your Software Company Needs to Show Up in AI Search Results", "url": "https://smbnewsroom.com/pages/ai-visibility.html"},
-        {"@type": "ListItem", "position": 6, "name": "2026 SaaS Pricing Report", "url": "https://smbnewsroom.com/pages/saas-pricing-report.html"}
-      ]
-    }
+    {"@type": "WebSite","name": "SMB Newsroom","url": "https://smbnewsroom.com","description": "Business insights, expert rankings, company spotlights, and industry analysis for decision-makers at growing businesses.","publisher": {"@type": "Organization","name": "Listicle Liaison LLC","url": "https://listicleliaison.com","contactPoint": {"@type": "ContactPoint","email": "partnerships@listicleliaison.com","contactType": "sales"},"sameAs": ["https://softwareindustryreviews.com","https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://financialindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://ai-mentions.com","https://listicleliaison.com"]}}
   ]
 }
 </script>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
     <a href="/" class="nav-brand">
@@ -226,21 +169,19 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </nav>
 
-<!-- MISSION BAR -->
 <div style="padding:calc(var(--nav-h) + 16px) 24px 16px;background:var(--black);border-bottom:1px solid rgba(255,255,255,.1)">
   <div style="max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between" class="mission-bar">
     <div style="font-size:12px;color:rgba(255,255,255,.4)">Trusted business intelligence for growing companies &middot; Part of the <a href="https://listicleliaison.com" style="color:rgba(255,255,255,.6);text-decoration:underline">Listicle Liaison</a> publishing network</div>
-    <div style="font-size:11px;color:rgba(255,255,255,.3)">March 31, 2026</div>
+    <div style="font-size:11px;color:rgba(255,255,255,.3)">April 2026</div>
   </div>
 </div>
 
-<!-- HERO -->
 <section class="hero" style="padding-top:24px">
   <div style="max-width:var(--max-w);margin:0 auto 32px;padding:0 24px">
     <div style="background:var(--surface);border-radius:var(--radius-lg);padding:32px 36px" class="intro-card">
       <div>
         <h2 style="font-family:var(--font-display);font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">Business intelligence you can act on.</h2>
-        <p style="font-size:15px;color:var(--ink-3);line-height:1.65;margin-bottom:16px">SMB Newsroom delivers expert rankings, industry analysis, and company spotlights for decision-makers at growing businesses. We cut through vendor marketing to tell you what's actually working — backed by data from 380,000+ verified software reviews.</p>
+        <p style="font-size:15px;color:var(--ink-3);line-height:1.65;margin-bottom:16px">SMB Newsroom delivers expert rankings, industry analysis, and company spotlights for decision-makers at growing businesses. We cut through vendor marketing to tell you what's actually working — backed by data from 380,000+ verified software reviews and 10 specialized industry publications.</p>
         <div class="intro-ctas">
           <a href="/pages/advertise.html" style="display:inline-block;padding:9px 20px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">Get Your Company Featured</a>
           <a href="https://softwareindustryreviews.com" style="display:inline-block;padding:9px 20px;border:1.5px solid var(--border);color:var(--ink-2);border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">View Software Rankings</a>
@@ -248,11 +189,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       </div>
       <div class="intro-stats">
         <div style="background:var(--accent-pale);border-radius:var(--radius);padding:16px;text-align:center">
-          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--accent)">80+</div>
-          <div style="font-size:12px;color:var(--ink-3);font-weight:500">Products Ranked</div>
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--accent)">1,350+</div>
+          <div style="font-size:12px;color:var(--ink-3);font-weight:500">Companies Ranked</div>
         </div>
         <div style="background:var(--blue-pale);border-radius:var(--radius);padding:16px;text-align:center">
-          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--blue)">8</div>
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--blue)">45+</div>
           <div style="font-size:12px;color:var(--ink-3);font-weight:500">Categories Covered</div>
         </div>
         <div style="background:var(--green-pale);border-radius:var(--radius);padding:16px;text-align:center">
@@ -260,7 +201,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
           <div style="font-size:12px;color:var(--ink-3);font-weight:500">Reviews Analyzed</div>
         </div>
         <div style="background:var(--gold-pale);border-radius:var(--radius);padding:16px;text-align:center">
-          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--gold)">15+</div>
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--gold)">10</div>
           <div style="font-size:12px;color:var(--ink-3);font-weight:500">Network Sites</div>
         </div>
       </div>
@@ -304,7 +245,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </section>
 
-<!-- FEATURED LISTICLES -->
 <section class="section">
   <div class="section-header">
     <div class="section-title">Featured Listicles</div>
@@ -334,7 +274,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 
 <hr class="divider">
 
-<!-- SPONSORED COMPANIES -->
 <div class="sponsored-strip">
   <div class="sponsored-strip-inner">
     <div class="sponsored-strip-label">Sponsored &middot; Featured Companies</div>
@@ -363,7 +302,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </div>
 
-<!-- EXPERT ROUNDUPS -->
 <section class="section">
   <div class="section-header">
     <div class="section-title">Expert Roundups</div>
@@ -393,7 +331,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 
 <hr class="divider">
 
-<!-- COMPANY SPOTLIGHTS -->
 <section class="section">
   <div class="section-header">
     <div class="section-title">Company Spotlights</div>
@@ -421,7 +358,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </section>
 
-<!-- DUAL CTA -->
 <div class="dual-cta">
   <div class="dual-cta-card">
     <h3>Get your company featured</h3>
@@ -430,12 +366,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
   <div class="dual-cta-card">
     <h3>Already ranked on our network?</h3>
-    <p>Your company may already appear in our rankings on Software Industry Reviews. Claim your profile and upgrade your visibility.</p>
-    <a href="https://softwareindustryreviews.com/pages/pricing.html" class="dual-cta-btn outline">Claim Profile &rarr;</a>
+    <p>Your company may already appear in our rankings across 9 review sites. Claim your profile and upgrade your visibility.</p>
+    <a href="https://listicleliaison.com/pages/pricing.html" class="dual-cta-btn outline">Claim Profile &rarr;</a>
   </div>
 </div>
 
-<!-- INDUSTRY INSIGHTS -->
 <section class="section">
   <div class="section-header">
     <div class="section-title">Industry Insights</div>
@@ -463,14 +398,12 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
   <h2>Want to contribute?</h2>
   <p>We partner with industry experts, analysts, and thought leaders to publish original research and insights.</p>
   <a href="mailto:editorial@smbnewsroom.com" class="cta-btn">Become a Contributor &rarr;</a>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
     <div>
@@ -481,20 +414,26 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       <div class="footer-col-title">Content</div>
       <a href="/pages/top-10-crm.html">Listicles</a>
       <a href="/pages/top-crm-expert-roundup.html">Expert Roundups</a>
-      <a href="/pages/top-10-cybersecurity.html">Company Spotlights</a>
+      <a href="/pages/rippling-spotlight.html">Company Spotlights</a>
       <a href="/pages/ai-consolidation.html">Industry Insights</a>
+      <a href="/pages/advertise.html">Get Featured</a>
     </div>
     <div class="footer-col">
-      <div class="footer-col-title">Company</div>
-      <a href="https://listicleliaison.com/pages/about.html">About</a>
-      <a href="/pages/advertise.html">Advertise</a>
-      <a href="mailto:partnerships@listicleliaison.com">Contact</a>
+      <div class="footer-col-title">Our Network</div>
+      <a href="https://softwareindustryreviews.com">Software Industry Reviews</a>
+      <a href="https://aiindustryreviews.com">AI Industry Reviews</a>
+      <a href="https://healthcareindustryreviews.com">Healthcare Industry Reviews</a>
+      <a href="https://financialindustryreviews.com">Financial Industry Reviews</a>
+      <a href="https://cryptoindustryreviews.com">Crypto Industry Reviews</a>
+      <a href="https://casinoindustryreviews.com">Casino Industry Reviews</a>
+      <a href="https://miningindustryreviews.com">Mining Industry Reviews</a>
     </div>
     <div class="footer-col">
-      <div class="footer-col-title">Get Featured</div>
-      <a href="/pages/advertise.html">Advertising</a>
-      <a href="/pages/advertise.html">Sponsored Content</a>
-      <a href="/pages/advertise.html">Listicle Inclusion</a>
+      <div class="footer-col-title">Tools &amp; Media</div>
+      <a href="https://ai-mentions.com">AI Mentions</a>
+      <a href="https://listicleliaison.com">Listicle Liaison</a>
+      <a href="https://listicleliaison.com/pages/partners.html">Affiliate Program</a>
+      <a href="mailto:partnerships@listicleliaison.com">Contact Us</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -503,8 +442,5 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   </div>
 </footer>
 
-<script>
-// Mobile menu toggle
-</script>
 </body>
 </html>
