@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <title>SMB Newsroom — Business Insights, Rankings & Industry Intelligence</title>
 <meta name="description" content="SMB Newsroom delivers expert rankings, industry analysis, and company spotlights for growing businesses. Discover who's leading across technology, services, and innovation.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://smbnewsroom.com/">
+<link rel="canonical" href="https://www.smbnewsroom.com/">
 <meta property="og:title" content="SMB Newsroom — Business Insights & Rankings">
 <meta property="og:description" content="Expert rankings, industry analysis, and company spotlights for growing businesses.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.smbnewsroom.com/">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -44,7 +46,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .hero{padding:calc(var(--nav-h) + 32px) 24px 48px;background:var(--surface-warm);border-bottom:1px solid var(--border)}
 .hero-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
 .hero-label{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:12px;padding:3px 10px;background:var(--accent-pale);border-radius:3px}
-.hero h1{font-family:var(--font-display);font-size:42px;font-weight:700;line-height:1.15;letter-spacing:-.8px;color:var(--ink);margin-bottom:16px}
+.hero .featured-title{font-family:var(--font-display);font-size:42px;font-weight:700;line-height:1.15;letter-spacing:-.8px;color:var(--ink);margin-bottom:16px}
 .hero-excerpt{font-size:17px;color:var(--ink-3);line-height:1.65;margin-bottom:20px}
 .hero-meta{font-size:13px;color:var(--ink-4);display:flex;gap:16px}
 .hero-meta strong{color:var(--ink-2)}
@@ -124,7 +126,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .intro-ctas{display:flex;gap:12px;flex-wrap:wrap}
 @media(max-width:900px){
   .hero-inner{grid-template-columns:1fr}
-  .hero h1{font-size:32px}
+  .hero .featured-title{font-size:32px}
   .article-grid{grid-template-columns:1fr}
   .sponsored-grid{grid-template-columns:repeat(2,1fr)}
   .dual-cta{grid-template-columns:1fr}
@@ -137,7 +139,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   .mission-bar{flex-direction:column;gap:4px;text-align:center}
 }
 @media(max-width:480px){
-  .hero h1{font-size:26px}
+  .hero .featured-title{font-size:26px}
   .sponsored-grid{grid-template-columns:1fr}
   .section-title{font-size:18px}
 }
@@ -146,7 +148,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "WebSite","name": "SMB Newsroom","url": "https://smbnewsroom.com","description": "Business insights, expert rankings, company spotlights, and industry analysis for decision-makers at growing businesses.","publisher": {"@type": "Organization","name": "Listicle Liaison LLC","url": "https://listicleliaison.com","contactPoint": {"@type": "ContactPoint","email": "partnerships@listicleliaison.com","contactType": "sales"},"sameAs": ["https://softwareindustryreviews.com","https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://financialindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://ai-mentions.com","https://listicleliaison.com"]}}
+    {"@type": "WebSite","name": "SMB Newsroom","url": "https://www.smbnewsroom.com","description": "Business insights, expert rankings, company spotlights, and industry analysis for decision-makers at growing businesses.","publisher": {"@type": "Organization","name": "Listicle Liaison LLC","url": "https://listicleliaison.com","contactPoint": {"@type": "ContactPoint","email": "partnerships@listicleliaison.com","contactType": "sales"},"sameAs": ["https://softwareindustryreviews.com","https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://financialindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://ai-mentions.com","https://listicleliaison.com"]}}
   ]
 }
 </script>
@@ -180,7 +182,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   <div style="max-width:var(--max-w);margin:0 auto 32px;padding:0 24px">
     <div style="background:var(--surface);border-radius:var(--radius-lg);padding:32px 36px" class="intro-card">
       <div>
-        <h2 style="font-family:var(--font-display);font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">Business intelligence you can act on.</h2>
+        <h1 style="font-family:var(--font-display);font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:10px">Business intelligence you can act on.</h1>
         <p style="font-size:15px;color:var(--ink-3);line-height:1.65;margin-bottom:16px">SMB Newsroom delivers expert rankings, industry analysis, and company spotlights for decision-makers at growing businesses. We cut through vendor marketing to tell you what's actually working — backed by data from 380,000+ verified software reviews and 10 specialized industry publications.</p>
         <div class="intro-ctas">
           <a href="/pages/advertise.html" style="display:inline-block;padding:9px 20px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none;font-size:13px;font-weight:600">Get Your Company Featured</a>
@@ -211,7 +213,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
   <div class="hero-inner">
     <div>
       <span class="hero-label">Featured Story</span>
-      <h1>Top CRM Software — What Forbes, G2 & Gartner All Agree On</h1>
+      <h2 class="featured-title">Top CRM Software — What Forbes, G2 & Gartner All Agree On</h2>
       <p class="hero-excerpt">We cross-referenced 12 major publication rankings to find which CRM platforms consistently rank at the top — and where the experts fundamentally disagree on what matters most.</p>
       <div class="hero-meta">
         <span>By <strong>Editorial Team</strong></span>
@@ -226,7 +228,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
         <div class="hero-sidebar-item-title">10 Cybersecurity Platforms Protecting Enterprise in 2026</div>
         <div class="hero-sidebar-item-meta">Mar 31, 2026</div>
       </a>
-      <a href="#spotlights" class="hero-sidebar-item">
+      <a href="/pages/rippling-spotlight.html" class="hero-sidebar-item">
         <div class="hero-sidebar-item-label spotlight">Company Spotlight</div>
         <div class="hero-sidebar-item-title">How Rippling Is Redefining HR Tech for Growing Companies</div>
         <div class="hero-sidebar-item-meta">Mar 29, 2026</div>
@@ -236,11 +238,11 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
         <div class="hero-sidebar-item-title">The AI Consolidation Wave: What It Means for Software Buyers</div>
         <div class="hero-sidebar-item-meta">Mar 28, 2026</div>
       </a>
-      <a href="#listicles" class="hero-sidebar-item">
+      <div class="hero-sidebar-item">
         <div class="hero-sidebar-item-label listicle">Listicle</div>
         <div class="hero-sidebar-item-title">Best Email Marketing Platforms for Small Business — 2026</div>
         <div class="hero-sidebar-item-meta">Mar 27, 2026</div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -314,18 +316,18 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       <div class="article-card-excerpt">We analyzed 12 major publication rankings to build a consensus map of which CRM platforms the experts agree on.</div>
       <div class="article-card-meta">Mar 30, 2026 &middot; 9 min read</div>
     </a>
-    <a href="#" class="article-card">
+    <div class="article-card">
       <div class="article-card-img gold" style="position:relative"><span class="article-card-type roundup">Expert Roundup</span><div class="card-tag">Coming April 2026</div><div class="card-headline">PM Tools Compared</div></div>
       <div class="article-card-title">Best Project Management Software — Every Major Publication's Top Picks Compared</div>
       <div class="article-card-excerpt">PCMag, TechRadar, Zapier, and 8 more publications each named their top PM tools. Here's the consensus.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 8 min read</div>
-    </a>
-    <a href="#" class="article-card">
+    </div>
+    <div class="article-card">
       <div class="article-card-img gold" style="position:relative"><span class="article-card-type roundup">Expert Roundup</span><div class="card-tag">Coming April 2026</div><div class="card-headline">AI Citations Decoded</div></div>
       <div class="article-card-title">Which Software Gets Cited by AI? An Analysis of LLM Recommendations</div>
       <div class="article-card-excerpt">We asked ChatGPT, Claude, and Perplexity 50 identical software questions. Here's which products appeared most.</div>
       <div class="article-card-meta">Coming April 2026 &middot; 11 min read</div>
-    </a>
+    </div>
   </div>
 </section>
 
