@@ -68,3 +68,4 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.smbnewsroom.com/sitemap.xml
+# Updated 2026-10-21
